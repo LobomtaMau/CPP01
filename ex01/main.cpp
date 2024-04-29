@@ -3,7 +3,6 @@
 int main() {
     int n_Zombies = 7;
     
-
     Zombie* horde = zombieHorde(n_Zombies, "TOY");
 
     if (horde != NULL) {
