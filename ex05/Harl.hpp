@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbaptist <mbaptist@student.42.fr>          +#+  +:+       +#+        */
+/*   By: struf <struf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 17:02:55 by mbaptist          #+#    #+#             */
-/*   Updated: 2024/04/29 17:10:20 by mbaptist         ###   ########.fr       */
+/*   Updated: 2024/04/30 11:31:38 by struf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define HARL_HPP
 
 #include <iostream>
+
 
 class Harl {
     private:

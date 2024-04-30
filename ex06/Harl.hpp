@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: struf <struf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/29 17:03:02 by mbaptist          #+#    #+#             */
-/*   Updated: 2024/04/30 11:56:41 by struf            ###   ########.fr       */
+/*   Created: 2024/04/29 17:02:55 by mbaptist          #+#    #+#             */
+/*   Updated: 2024/04/30 15:19:40 by struf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <Harl.hpp>
+#ifndef HARL_HPP
+#define HARL_HPP
 
-int main() {
-    Harl harlinhas;
-    harlinhas.complain("DEBUG");
-    harlinhas.complain("INFO");
-    harlinhas.complain("WARNING");
-    harlinhas.complain("ERROR");
+#include <iostream>
+#include <string.h>
+#include <algorithm> 
 
-    Harl TOY;
-    TOY.complain("TENHO SEDE");
-    TOY.complain("TENHO MTA SEDE");
-    TOY.complain("WARNING TENHO MESMO MTA SEDE");
-    return 0;
-}
+class Harl {
+    private:
+        void _debug(void);
+        void _info(void);
+        void _warning(void);
+        void _error(void);
+        
+    public:
+        Harl();
+        ~Harl();
+        void complain(std::string level);
+
+};
+
+int validLvl(const std::string& level);
+
+#endif
