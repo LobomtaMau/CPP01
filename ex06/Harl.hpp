@@ -15,7 +15,6 @@
 
 #include <iostream>
 #include <string.h>
-#include <algorithm> 
 
 class Harl {
     private:

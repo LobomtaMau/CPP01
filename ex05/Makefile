@@ -1,4 +1,4 @@
-NAME = harl2.0
+NAME = harl2
 
 SRC = main.cpp Harl.cpp
 
@@ -28,6 +28,6 @@ re: fclean all
 
 run:
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --track-fds=yes \
-	./harl2.0
+	./harl2
 
 .PHONY: all clean fclean re

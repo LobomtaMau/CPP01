@@ -6,7 +6,7 @@
 /*   By: mbaptist <mbaptist@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:13:38 by mbaptist          #+#    #+#             */
-/*   Updated: 2024/04/29 16:50:20 by mbaptist         ###   ########.fr       */
+/*   Updated: 2024/05/13 10:59:04 by mbaptist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ void replaceInFile(const std::string &filename, const std::string &s1, const std
     outputFile.close();
 }
 
-
 int main (int argc, char **argv) {
     if (argc != 4) {
         std::cerr << "Use: " << argv[0] << " <filename> <find> <replace>" << std::endl;
@@ -55,21 +54,11 @@ int main (int argc, char **argv) {
     std::string s1 = argv[2];
     std::string s2 = argv[3];
 
+    if (s1.empty()) {
+        std::cerr << "Error: Search string cannot be empty." << std::endl;
+        return 1;
+    }
     replaceInFile(filename, s1, s2);
     
     return 0;
 }
-
-
-/*while (std::getline(inputFile, line)) {
-        std::size_t pos = 0;
-
-        while ((pos = line.find(s1, pos)) != std::string::npos) {
-            outputFile << line.substr(0, pos) << s2;
-            pos += s1.length();
-        }
-        if (pos == std::string::npos) {
-            outputFile << line << std::endl;
-        } else
-            outputFile << line.substr(pos) << std::endl;
-    }*/

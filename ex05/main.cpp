@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: struf <struf@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/29 17:03:02 by mbaptist          #+#    #+#             */
-/*   Updated: 2024/04/30 11:56:41 by struf            ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <Harl.hpp>
 
 int main() {
@@ -18,7 +6,8 @@ int main() {
     harlinhas.complain("INFO");
     harlinhas.complain("WARNING");
     harlinhas.complain("ERROR");
-
+    
+    std::cout << std::endl;
     Harl TOY;
     TOY.complain("TENHO SEDE");
     TOY.complain("TENHO MTA SEDE");

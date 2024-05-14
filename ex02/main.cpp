@@ -18,3 +18,12 @@ int main() {
 
    return 0;
 }
+
+
+/*
+*stringPTR is a pointer to a string object.
+It stores the memory address where the str object is located.
+
+&stringREF is a reference to a std::string object.
+It directly refers to the str object itself, rather than its memory address.
+*/

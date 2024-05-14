@@ -28,6 +28,6 @@ re: fclean all
 
 run:
 	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --track-fds=yes \
-	./seds t1.txt ACA COMECA
+	./seds t1 "a" 000
 
 .PHONY: all clean fclean re

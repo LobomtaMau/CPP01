@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
     
     std::string level = argv[1];
     Harl toy;
-    int levelInd = validLvl(level); //verificar erro de norma
+    int levelInd = validLvl(level);
     
     switch (levelInd) {
     case 0 :
